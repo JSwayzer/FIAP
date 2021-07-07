@@ -1,0 +1,117 @@
+initcap(nome da coluna) as nome da coluna
+
+unidade_saude','tipo_unidade','rua_unidade_saude','cep_unidade_saude
+	Alto da Riviera','UBS','AVENIDA PROFESSOR MARIO MAZAGAO','04929080
+	Chacara Santa Maria','UBS','RUA CICLADES','05876040
+	Cidade Ipava','UBS','AVENIDA TAQUANDAVA','04950000
+	Jardim Aracati','UBS','RUA FANCISCO HOMEM DEL REI','04949070
+	Jardim Caicara','UBS','RUA SERAFIM ALVARES','05871370
+	Jardim Coimbra','UBS','ESTRADA DO MBOI MIRIM','04905023
+	Jardim Guaruja','UBS','RUA JOAO DE ALMADA','05875300
+	Jardim Herculano','UBS','RUA INACIO LIMAS','04920050
+	Jardim Nakamura','UBS','RUA MANUEL VITOR DE JESUS','04942100
+	Jardim Paranapamema','UBS','RUA PIETRO DA MILANO','05875360
+	Jardim Santa Margarida','UBS','RUA CAPAO REDONDO','04931100
+	Parque do Lago','UBS','ESTRADA DA BARONESA','04944000
+	Parque Novo Santo Amaro','UBS','RUA PORTA DO PRADO','05874130
+	Santa Lucia','UBS','RUA CARMELO CALI','04940070
+
+
+INSERT INTO public.mec_unidade_saude(
+	data_inclusao, unidade_saude, tipo_unidade, rua_unidade_saude, cep_unidade_saude)
+	VALUES (now(),'Alto Da Riviera','UBS','Avenida Professor Mario Mazagao','04929080'),
+			(now(),'Chacara Santa Maria','UBS','Rua Ciclades','05876040'),
+			(now(),'Cidade Ipava','UBS','Avenida Taquandava','04950000'),
+			(now(),'Jardim Aracati','UBS','Rua Fancisco Homem Del Rei','04949070'),
+			(now(),'Jardim Coimbra','UBS','Estrada Do Mboi Mirim','04905023'),
+			(now(),'Jardim Guaruja','UBS','Rua Joao De Almada','05875300'),
+			(now(),'Jardim Herculano','UBS','Rua Inacio Limas','04920050'),
+			(now(),'Jardim Nakamura','UBS','Rua Manuel Vitor De Jesus','04942100'),
+			(now(),'Jardim Paranapamema','UBS','Rua Pietro Da Milano','05875360'),
+			(now(),'Jardim Paranapamema','UBS','Rua Pietro Da Milano','05875360'),
+			(now(),'Jardim Santa Margarida','UBS','Rua Capao Redondo','04931100'),
+			(now(),'Parque Do Lago','UBS','Estrada Da Baronesa','04944000'),
+			(now(),'Parque Novo Santo Amaro','UBS','Rua Porta Do Prado','05874130'),
+			(now(),'Santa Lucia','UBS','Rua Carmelo Cali','04940070');
+
+
+
+
+select * from public.mec_unidade_saude
+
+delete from public.mec_unidade_saude
+   ALTER SEQUENCE public.mec_unidade_saude_id_unidade_saude_seq
+                  INCREMENT 1 
+                  MINVALUE 1
+                  MAXVALUE 2147483647 
+                  START 1
+                  RESTART 1 
+                  CACHE 1
+                  NO CYCLE;
+
+
+
+ UPDATE public.mec_unidade_saude_end
+	SET id_unidade_saude = 6
+	WHERE unidade_saude = 'Jardim Caicara'
+	and id_unidade_saude is null;
+
+
+
+
+INSERT INTO public.mec_unidade_saude(
+	data_inclusao, unidade_saude, tipo_unidade, rua_unidade_saude, cep_unidade_saude)
+	VALUES (now(),'Alto da Riviera','UBS','Avenida Professor Mario Mazagao','04929080'),
+			(now(),'Chacara Santa Maria','UBS','Rua Ciclades','05876040'),
+			(now(),'Cidade Ipava','UBS','Avenida Taquandava','04950000'),
+			(now(),'Horizonte Azul','UBS','Rua Albergati Capacelli','04963000'),
+			(now(),'Jardim Aracati','UBS','Rua Fancisco Homem Del Rei','04949070'),
+			(now(),'Jardim Caicara','UBS','RUA SERAFIM ALVARES','05871370'),
+			(now(),'Jardim Capela','UBS','Rua Barao de Paiva Manso','04960110'),
+			(now(),'Jardim Coimbra','UBS','Estrada Do Mboi Mirim','04905023'),
+			(now(),'Jardim Guaruja','UBS','Rua Joao De Almada','05875300'),
+			(now(),'Jardim Herculano','UBS','Rua Inacio Limas','04920050'),
+			(now(),'Jardim Nakamura','UBS','Rua Manuel Vitor De Jesus','04942100'),
+			(now(),'Jardim Paranapamema','UBS','Rua Pietro Da Milano','05875360'),
+			(now(),'Jardim Santa Margarida','UBS','Rua Capao Redondo','04931100'),
+			(now(),'Parque Do Lago','UBS','Estrada Da Baronesa','04944000'),
+			(now(),'Parque Novo Santo Amaro','UBS','Rua Porta Do Prado','05874130'),
+			(now(),'Santa Lucia','UBS','Rua Carmelo Cali','04940070'),
+			(now(),'Vila Calu','UBS','Estrada do MBoi Mirim','04948030'),
+			(now(),'Vera Cruz','UBS','Avenida dos Funcionarios Publicos','04962000');
+
+
+
+
+
+
+
+
+
+
+INSERT INTO public.mec_unidade_saude(
+	data_inclusao, unidade_saude, tipo_unidade, rua_unidade_saude, cep_unidade_saude)
+	VALUES (now(),'Vila Calu','UBS','Estrada do MBoi Mirim','04948030'),
+			 (now(),'Vera Cruz','UBS','Avenida dos Funcionarios Publicos','04962000'),
+			 (now(),'Jardim Capela','UBS','Rua Barao de Paiva Manso','04960110');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO public.mec_unidade_saude(
+data_inclusao, unidade_saude, tipo_unidade, rua_unidade_saude, cep_unidade_saude)
+VALUES (now(),'Vila Calu','UBS','Estrada do MBoi Mirim','04948030'),
+		 (now(),'Vera Cruz','UBS','Avenida dos Funcionarios Publicos','04962000'),
+		 (now(),'Jardim Capela','UBS','Rua Barao de Paiva Manso','04960110');
